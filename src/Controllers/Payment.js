@@ -22,7 +22,6 @@ const PaymentController = {
           httpsAgent: agent,
         });
         serverIp = publicIpResponse.data.ip;
-        console.log("🚀 ~ serverIp:", serverIp)
       } catch (ipError) {
         // Fallback to network interfaces
         const networkInterfaces = os.networkInterfaces();
