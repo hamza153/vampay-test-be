@@ -19,6 +19,12 @@ const Routes = [
     action: PaymentController.testVampay,
     middleware: [],
   },
+  {
+    route: "/payment/testVampayTxnStatus",
+    method: "get",
+    action: PaymentController.testVampayTxnStatus,
+    middleware: [],
+  },
 ];
 
 module.exports = {
