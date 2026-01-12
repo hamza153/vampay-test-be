@@ -86,7 +86,7 @@ const PaymentController = {
     }
   },
 
-  testVampay: async (req, res) => {
+  testVampayTxnStatus: async (req, res) => {
     const { merchant_id, token, order_id } = req.query;
     // Get server IP address (the IP that will be seen by the external API)
     let serverIp = 'Unknown';
