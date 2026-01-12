@@ -136,7 +136,7 @@ const PaymentController = {
       );
 
       return res.status(200).json({
-        message: "Vampay payment link generated successfully",
+        message: "Vampay transaction status checked successfully",
         success: true,
         data: response.data,
         requestBody: req.query,
@@ -149,7 +149,7 @@ const PaymentController = {
       });
     } catch (err) {
       return res.status(500).json({
-        message: "Error generating payment link",
+        message: "Error checking transaction status",
         error: err.message,
         success: false,
         data: null,
